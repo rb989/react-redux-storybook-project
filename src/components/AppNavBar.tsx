@@ -25,7 +25,7 @@ interface AppNavBarProps {
 const AppNavBar: React.FC<AppNavBarProps> = ({ styles, handleDrawerToggle}) => {
 const handleClick = () => {
     window.open(
-      "https://github.com/harryho/react-crm",
+      "https://github.com/jordanye0/react-redux-storybook-project",
       undefined,
       undefined,
       false

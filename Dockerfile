@@ -1,6 +1,6 @@
 ###### Build #####
 FROM node:12-slim AS node
-LABEL author="Harry Ho"
+LABEL author="Jordan"
 WORKDIR /
 COPY . .
 RUN npm install
@@ -9,7 +9,7 @@ RUN npm run build
 
 ###### Run #####
 FROM nginx:alpine
-LABEL author="Harry Ho"
+LABEL author="Jordan"
 WORKDIR /var/cache/nginx
 COPY --from=node /build /usr/share/nginx/html
 COPY ./config/nginx.conf /etc/nginx/conf.d/default.conf
